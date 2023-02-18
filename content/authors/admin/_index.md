@@ -45,7 +45,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
+    link: 'mailto:timognth@icloud.com'
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/_mrmojo_risin/
