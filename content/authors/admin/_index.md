@@ -6,7 +6,7 @@ title: Timo Günther
 superuser: true
 
 # Role/position
-role: ''
+role: 'Data Scientist'
 
 # Status emoji
 status:
