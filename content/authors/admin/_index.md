@@ -21,9 +21,10 @@ status:
 bio: Hello and welcome to my website! My name is Timo, and I'm a data scientist with a passion for solving complex problems using data-driven insights. Thank you for visiting, and I look forward to working with you to achieve your data goals!
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Data Science, Analysis and Visualization
+- Machine Learning
+- Web Design
+- Usability and User Experience
 
 #education:
 #  courses:
