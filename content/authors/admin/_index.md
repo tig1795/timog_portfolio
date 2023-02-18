@@ -63,6 +63,6 @@ social:
 #email: ""
 ---
 
-Hello and welcome to my website! My name is Timo, and I'm a data scientist with a passion for solving complex problems using data-driven insights. Thank you for visiting, and I look forward to working with you to achieve your data goals!
+Timo Günther
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
