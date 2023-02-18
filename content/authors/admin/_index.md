@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Alice Wu (吳恩達)
+title: Timo Günther
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: ''
+role: 'Data Scientist'
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🍺
 
 # Organizations/Affiliations
 #organizations:
@@ -18,12 +18,13 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Hello and welcome to my website! My name is Timo, and I'm a data scientist with a passion for solving complex problems using data-driven insights. Thank you for visiting, and I look forward to working with you to achieve your data goals!
 
 #interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
+- Data Science, Analysis and Visualization
+- Machine Learning
+- Web Design
+- Usability and User Experience
 
 #education:
 #  courses:
@@ -45,16 +46,14 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/wowchemy
   - icon: instagram
     icon_pack: fab
-    link: https://instagram.com/geocushen
+    link: https://www.instagram.com/_mrmojo_risin/
+
 # Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+- icon: github
+  icon_pack: fab
+  link: https://github.com/tig1795
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
