@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Timo Günther
+title: Timo Guenther
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,11 +20,11 @@ status:
 # Short bio (displayed in user profile at end of posts)
 bio: Hello and welcome to my website! My name is Timo, and I'm a data scientist with a passion for solving complex problems using data-driven insights. Thank you for visiting, and I look forward to working with you to achieve your data goals!
 
-interests:
-- Data Science, Analysis and Visualization
-- Machine Learning
-# - Web Design
-- Usability and User Experience
+#interests:
+#- Data Science, Analysis and Visualization
+#- Machine Learning
+#- Web Design
+#- Usability and User Experience
 
 #education:
 #  courses:
