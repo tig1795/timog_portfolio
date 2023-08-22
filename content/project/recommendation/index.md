@@ -1,6 +1,6 @@
 ---
 title: Evaluating websites
-summary: This study evaluates the websites of the Media Communication (MK) and Human-Computer Systems (MCS) degree programmes at the University of Würzburg from the student's perspective.
+summary: This research aims to assess the student perspective regarding the websites of the University of Würzburg's degree programs Media Communication (MK) and Human-Computer Systems (MCS).
 tags:
   - UX
 date: 2023-08-22
