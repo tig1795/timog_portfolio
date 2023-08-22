@@ -53,7 +53,7 @@ social:
     icon_pack: fab
     link: https://github.com/tig1795
   - icon: briefcase
-    icon_pack: fa
+    icon_pack: fas
     link: https://www.uni-wuerzburg.de/international/kontakt/team-referat-11-international-networking/
   - icon: instagram
     icon_pack: fab
