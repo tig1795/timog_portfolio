@@ -28,10 +28,10 @@ content:
   filter_button:
     - name: All
       tag: '*'
+    - name: Machine Learning
+      tag: ML  
     - name: Usability
       tag: UX
-    - name: Machine Learning
-      tag: ML
     - name: Web Design
       tag: WD
 
