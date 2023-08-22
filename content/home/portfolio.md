@@ -32,8 +32,8 @@ content:
       tag: ML
     - name: Computer Vision
       tag: CV
-    - name: NLP
-      tag: NLP
+    - name: Usability
+      tag: Usability
 
 design:
   columns: '1'
