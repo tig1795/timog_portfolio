@@ -52,6 +52,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/tig1795
+  - icon: work
+    icon_pack: fab
+    link: https://www.uni-wuerzburg.de/international/kontakt/team-referat-11-international-networking/
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/_mrmojo_risin/
