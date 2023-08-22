@@ -28,6 +28,8 @@ content:
   filter_button:
     - name: All
       tag: '*'
+    - name: E-Book
+      tag: EB
     - name: Machine Learning
       tag: ML  
     - name: Usability
