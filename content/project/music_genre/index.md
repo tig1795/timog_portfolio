@@ -4,5 +4,5 @@ summary: This project aimed to apply different clustering methods to a corpus of
 tags:
   - ML
 date: 2023-08-22
-external_link: https://github.com/TeresaKa/clustering_sose2020
+external_link: https://github.com/tig1795/Stylometry-Term-paper
 ---
