@@ -46,12 +46,15 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:timognth@icloud.com'
-  - icon: instagram
+  - icon: linkedin
     icon_pack: fab
-    link: https://www.instagram.com/_mrmojo_risin/
+    link: 'www.linkedin.com/in/timo-guenther'
   - icon: github
     icon_pack: fab
     link: https://github.com/tig1795
+  - icon: instagram
+    icon_pack: fab
+    link: https://www.instagram.com/_mrmojo_risin/
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
