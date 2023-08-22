@@ -28,12 +28,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
+    - name: Usability
+      tag: UX
     - name: Machine Learning
       tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: Usability
-      tag: Usability
+    - name: Web Design
+      tag: WD
 
 design:
   columns: '1'
