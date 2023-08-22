@@ -1,6 +1,6 @@
 ---
 title: Formula 1 web page
-summary: Within the framework of this project, a website prototype was created. Subsequently, the prototype was subjected to a heuristic evaluation, according to Nielsen. The resulting results made it possible to evaluate the usability and user experience of the prototype.
+summary: In this project, a website prototype was created and then subjected to a Nielsen heuristic evaluation, enabling usability assessment and user experience analysis.
 tags:
   - NLP
 date: 2023-08-22
