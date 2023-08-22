@@ -48,7 +48,7 @@ social:
     link: 'mailto:timognth@icloud.com'
   - icon: linkedin
     icon_pack: fab
-    link: 'www.linkedin.com/in/timo-guenther'
+    link: https://www.linkedin.com/in/timo-guenther
   - icon: github
     icon_pack: fab
     link: https://github.com/tig1795
