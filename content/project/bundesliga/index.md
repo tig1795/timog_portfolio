@@ -1,6 +1,6 @@
 ---
 title: Integration of an SQL database into a website.
-summary: For this project, we designed a dedicated website highlighting German football champions. This site seamlessly links to an SQL database, enabling easy expansions through user interactions.
+summary: For this project, I designed a dedicated website highlighting German football champions. This site seamlessly links to an SQL database, enabling easy expansions through user interactions.
 tags:
   - WD
 date: 2023-08-22
