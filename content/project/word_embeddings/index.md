@@ -1,6 +1,6 @@
 ---
 title: Word Embeddings
-summary: This project aims to explore BERT's viability in detecting evolving word meanings. It involves a comprehensive investigation, comparing Word2Vec and BERT models.
+summary: The central aim of this project is to ascertain the viability of utilizing BERT for detecting alterations in word meanings over time. This endeavour involves a comprehensive investigation that includes the utilization and comparative analysis of both Word2Vec and BERT models.
 tags:
   - ML
 date: 2023-08-22
