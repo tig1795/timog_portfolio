@@ -1,6 +1,6 @@
 ---
-title: Evaluating websites.
-summary: MCS site shows superior usability (H1) and user experience (H2) vs. MK site. Employing heuristic evaluation (HE) and cognitive walkthrough (CW), results favor MCS's usability.
+title: Evaluating websites
+summary: This study evaluates the websites of the Media Communication (MK) and Human-Computer Systems (MCS) degree programmes at the University of Würzburg from the student's perspective.
 tags:
   - UX
 date: 2023-08-22
