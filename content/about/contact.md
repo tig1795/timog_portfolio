@@ -18,7 +18,7 @@ content:
 
   # Email form provider
   form:
-    provider: netlify
+    provider: icloud
     formspree:
       id:
     netlify:
