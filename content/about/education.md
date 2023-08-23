@@ -22,6 +22,14 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Digital Humanities (MA)
+    company: University of Würzburg
+    company_url: https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/
+    company_logo: uniwue4c
+    location: Germany
+    date_start: '2020-10-01'
+    date_end: '2023-10-20'
+    
   - title: Digital Humanities and History (BA)
     company: University of Würzburg
     company_url: https://www.phil.uni-wuerzburg.de/studium/studienangebot/digital-humanities/
@@ -48,14 +56,6 @@ experience:
     date_start: '2006-09-13'
     date_end: '2014-06-30'
     description: I actively participated in the mathematical-technological curriculum throughout my tenure at the Gymnasium.
-
-  - title: Digital Humanities (MA)
-    company: University of Würzburg
-    company_url: https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/
-    company_logo: uniwue4c
-    location: Germany
-    date_start: '2020-10-01'
-    date_end: '2023-10-20'
 
 design:
   columns: '1'
