@@ -34,14 +34,14 @@ experience:
         * Basketball team
         * DJ club
 
-  - title: BEng Electronic Engineering
-    company: University X
-    company_url: ''
+  - title: Bachelor of Science in Economics
+    company: University of Würzburg
+    company_url: https://www.wiwi.uni-wuerzburg.de/startseite/
     company_logo: uniwue4c
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: My dissertation was on X
+    location: Germany
+    date_start: '2014-10-01'
+    date_end: '2015-10-01'
+    description: I withdrew from the degree program after completing two semesters.
 
 design:
   columns: '1'
