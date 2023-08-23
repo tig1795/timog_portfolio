@@ -49,6 +49,16 @@ experience:
     date_end: '2014-06-30'
     description: I actively participated in the mathematical-technological curriculum throughout my tenure at the Gymnasium.
 
+  - title: Digital Humanities (MA)
+    company: University of Würzburg
+    company_url: https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/
+    company_logo: uniwue4c
+    location: Germany
+    date_start: '2020-10-01'
+    date_end: '2023-10-20'
+    description: The thesis topic is Comparative Analysis of Data Sets and Feature Importance in Predicting Hit
+    Songs - a Machine Learning Approach.
+
 design:
   columns: '1'
 ---
