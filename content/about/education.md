@@ -29,8 +29,7 @@ experience:
     location: Germany
     date_start: '2020-10-01'
     date_end: '2023-10-20'
-    description: The thesis topic was comparative Analysis of Data Sets and Feature Importance in Predicting Hit
-    Songs - a Machine Learning Approach
+    description: The thesis topic was the elections in the Weimar Republic 1919-1933 - the influence of economic development on the voting behaviour of the population.
 
   - title: Digital Humanities and History (BA)
     company: University of Würzburg
