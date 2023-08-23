@@ -22,6 +22,21 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Student Worker
+    company: University of Würzburg
+    company_url: https://www.uni-wuerzburg.de/international/
+    company_logo: uniwue4c
+    location: Germany
+    date_start: '2018-12-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Conducting data analysis and generating visualizations for informative insights.
+        * Proficiently managing database operations, including editing and updating, utilizing tools like Moveon and Microsoft Access.
+        * Engaging in research endeavours to enhance knowledge and contribute to informed decision-making.
+        * Skillfully maintaining and updating websites, particularly employing Typo3 to ensure accurate and current content.
+
   - title: Food delivery
     company: burgerme
     company_url: https://www.burgerme.de/standorte/wuerzburg/
@@ -40,9 +55,6 @@ experience:
     description: |2-
         Responsibilities include:
         
-        * Analysing
-        * Modelling
-        * Deploying
         * Personal customer support
         * Holistic consulting and implementation of individual training (on-site) on relevant technology modules. 
         * Independent analysis of the existing technology portfolio, derivation of possible optimisation potential and recommendations for action.
