@@ -29,7 +29,7 @@ experience:
     location: Germany
     date_start: '2020-10-01'
     date_end: '2023-10-20'
-    description: The thesis topic is comparative analysis of data sets and feature importance in predicting hit songs - a machine learning approach.
+    description: The thesis topic is a comparative analysis of data sets and feature importance in predicting hit songs - a machine learning approach.
 
   - title: Digital Humanities and History (BA)
     company: University of Würzburg
