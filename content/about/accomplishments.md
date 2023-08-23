@@ -24,21 +24,20 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
   - certificate_url: https://www.dropbox.com/scl/fi/h8vhk8h1dru5wrpd5ym1y/Zertifikat_Typo_3.pdf     rlkey=x7nkgt7cu9ro7aor0866dyecr&dl=0
-    date_end: '2021-03-16'
+    date_end: ''
     date_start: '2021-03-16'
-    description: 'Introduction to TYPO-3'
+    description: 'Primer on website editing utilizing TYPO-3.'
     organization: JMU
     organization_url: https://www.uni-wuerzburg.de/startseite/
     title: TYPO3 - Basics
-    url: ''
-  - certificate_url: https://www.edx.org
+
+  - certificate_url: https://www.dropbox.com/scl/fi/70pc8pg37zjfr37fl7i2y/Zertifikat_Affinity_Photo.pdf?rlkey=es2onc60si7wvsqydww40q4bw&dl=0
     date_end: ''
-    date_start: '2021-01-01'
-    description: Formulated informed blockchain models, hypotheses, and use cases.
-    organization: edX
-    organization_url: https://www.edx.org
-    title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+    date_start: '2019-03-12'
+    description: 'Foundations of image editing using Affinity Photo.'
+    organization: JMU
+    organization_url: https://www.uni-wuerzburg.de/startseite/
+    title: Image editing with Affinity Photo - Introduction
 
 design:
   columns: '1'
