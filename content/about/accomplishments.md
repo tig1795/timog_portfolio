@@ -23,13 +23,13 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-  - certificate_url: https://www.coursera.org
-    date_end: ''
-    date_start: '2021-01-25'
-    description: ''
-    organization: Coursera
-    organization_url: https://www.coursera.org
-    title: Neural Networks and Deep Learning
+  - certificate_url: https://www.rz.uni-wuerzburg.de/dienste/kurse/
+    date_end: '2021-03-16'
+    date_start: '2021-03-16'
+    description: 'Introduction to TYPO-3'
+    organization: University Würzburg
+    organization_url: https://www.uni-wuerzburg.de/startseite/
+    title: TYPO3 - Basics
     url: ''
   - certificate_url: https://www.edx.org
     date_end: ''
@@ -39,14 +39,6 @@ item:
     organization_url: https://www.edx.org
     title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-  - certificate_url: https://www.datacamp.com
-    date_end: '2020-12-21'
-    date_start: '2020-07-01'
-    description: ''
-    organization: DataCamp
-    organization_url: https://www.datacamp.com
-    title: 'Object-Oriented Programming in R'
-    url: ''
 
 design:
   columns: '1'
