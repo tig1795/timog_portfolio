@@ -52,6 +52,7 @@ experience:
   - title: Digital Humanities (MA)
     company: University of Würzburg
     company_url: https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/
+    company_logo: uniwue4c
     date_start: '2020-10-01'
 
 design:
