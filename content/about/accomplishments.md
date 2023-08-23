@@ -27,7 +27,8 @@ item:
     date_end: '2021-03-16'
     date_start: '2021-03-16'
     description: 'Introduction to TYPO-3'
-    organization: JMU
+    organization: University of Würzburg
+    organization_logo: JMU
     organization_url: https://www.uni-wuerzburg.de/startseite/
     title: TYPO3 - Basics
     url: ''
