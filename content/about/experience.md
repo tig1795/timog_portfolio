@@ -25,7 +25,7 @@ experience:
   - title: Student Worker
     company: University of Würzburg
     company_url: https://www.uni-wuerzburg.de/international/
-    company_logo: University of Würzburg
+    company_logo: JMU
     location: Germany
     date_start: '2018-12-01'
     date_end: ''
