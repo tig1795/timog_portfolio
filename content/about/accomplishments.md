@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-  - url: {{< staticref "uploads/resume.pdf" "newtab" >}}See Certificate{{< /staticref >}} 
+  - certificate_url: uploads/Typo3.pdf
     date_end: ''
     date_start: '2021-03-16'
     description: 'Primer on website editing utilizing TYPO-3.'
