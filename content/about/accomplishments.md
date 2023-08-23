@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-  - certificate_url: https://www.rz.uni-wuerzburg.de/dienste/kurse/
+  - certificate_url: https://www.dropbox.com/scl/fi/h8vhk8h1dru5wrpd5ym1y/Zertifikat_Typo_3.pdf     rlkey=x7nkgt7cu9ro7aor0866dyecr&dl=0
     date_end: '2021-03-16'
     date_start: '2021-03-16'
     description: 'Introduction to TYPO-3'
