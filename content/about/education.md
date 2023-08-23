@@ -37,7 +37,7 @@ experience:
   - title: BEng Electronic Engineering
     company: University X
     company_url: ''
-    company_logo: uniwue.jpeg
+    company_logo: uniwue4c
     location: California
     date_start: '2016-01-01'
     date_end: '2020-12-31'
