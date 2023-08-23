@@ -22,6 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+
   - title: Digital Humanities (MA)
     company: University of Würzburg
     company_url: https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/
@@ -30,7 +31,7 @@ experience:
     date_start: '2020-10-01'
     date_end: '2023-10-20'
     description: The thesis topic is Comparative Analysis of Data Sets and Feature Importance in Predicting Hit
-    Songs, a Machine Learning Approach.
+    Songs - a Machine Learning Approach.
 
   - title: Digital Humanities and History (BA)
     company: University of Würzburg
@@ -49,6 +50,15 @@ experience:
     date_start: '2014-10-01'
     date_end: '2015-09-30'
     description: I withdrew from the degree program after completing two semesters.
+
+  - title: Abitur
+    company: Hanns-Seidel-Gymnasium Hösbach
+    company_url: https://www.hanns-seidel-gymnasium.de/
+    company_logo: hsg
+    location: Germany
+    date_start: '2006-09-13'
+    date_end: '2014-06-30'
+    description: I actively participated in the mathematical-technological curriculum throughout my tenure at the Gymnasium.
 
 design:
   columns: '1'
