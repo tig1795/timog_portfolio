@@ -29,8 +29,7 @@ experience:
     location: Germany
     date_start: '2015-10-01'
     date_end: '2020-09-30'
-    description: |2- 
-    The thesis topic was the elections in the Weimar Republic 1919-1933 - the influence of economic development on the voting behaviour of the population.
+    description: The thesis topic was the elections in the Weimar Republic 1919-1933 - the influence of economic development on the voting behaviour of the population.
 
   - title: Economics (BA)
     company: University of Würzburg
@@ -48,8 +47,7 @@ experience:
     location: Germany
     date_start: '2006-09-13'
     date_end: '2014-06-30'
-    description: |2-
-    I actively participated in the mathematical-technological curriculum throughout my tenure at the Gymnasium.
+    description: I actively participated in the mathematical-technological curriculum throughout my tenure at the Gymnasium.
 
   - title: Digital Humanities (MA)
     company: University of Würzburg
