@@ -43,7 +43,7 @@ experience:
   - title: Abitur
     company: Hanns-Seidel-Gymnasium Hösbach
     company_url: https://www.hanns-seidel-gymnasium.de/
-    company_logo: 
+    company_logo: hsg
     location: Germany
     date_start: '2006-09-13'
     date_end: '2014-06-30'
