@@ -22,7 +22,17 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Bachelor of Arts in Digital Humanities and History
+  - title: Digital Humanities (MA)
+    company: University of Würzburg
+    company_url: https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/
+    company_logo: uniwue4c
+    location: Germany
+    date_start: '2020-10-01'
+    date_end: '2023-10-20'
+    description: The thesis topic is Comparative Analysis of Data Sets and Feature Importance in Predicting Hit
+    Songs. A Machine Learning Approach.
+
+  - title: Digital Humanities and History (BA)
     company: University of Würzburg
     company_url: https://www.phil.uni-wuerzburg.de/studium/studienangebot/digital-humanities/
     company_logo: uniwue4c
@@ -31,7 +41,7 @@ experience:
     date_end: '2020-09-30'
     description: The thesis topic was the elections in the Weimar Republic 1919-1933 - the influence of economic development on the voting behaviour of the population.
 
-  - title: Bachelor of Science in Economics
+  - title: Economics (BA)
     company: University of Würzburg
     company_url: https://www.wiwi.uni-wuerzburg.de/startseite/
     company_logo: uniwue4c
