@@ -50,15 +50,6 @@ experience:
     date_end: '2015-09-30'
     description: I withdrew from the degree program after completing two semesters.
 
-  - title: Abitur
-    company: Hanns-Seidel-Gymnasium Hösbach
-    company_url: https://www.hanns-seidel-gymnasium.de/
-    company_logo: hsg
-    location: Germany
-    date_start: '2006-09-13'
-    date_end: '2014-06-30'
-    description: I actively participated in the mathematical-technological curriculum throughout my tenure at the Gymnasium.
-
 design:
   columns: '1'
 ---
