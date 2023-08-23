@@ -26,7 +26,7 @@ experience:
     company: University of Würzburg
     company_url: https://www.uni-wuerzburg.de/international/
     company_logo: JMU
-    location: Germany
+    location: Würzburg
     date_start: '2018-12-01'
     date_end: ''
     description: |2-
@@ -41,7 +41,7 @@ experience:
     company: burgerme
     company_url: https://www.burgerme.de/standorte/wuerzburg/
     company_logo: burgerme
-    location: Germany
+    location: Würzburg
     date_start: '2018-10-01'
     date_end: '2018-11-30'
 
@@ -49,7 +49,7 @@ experience:
     company: DTB Deutsche Technikberatung GmbH
     company_url: https://www.deutsche-technikberatung.de/
     company_logo: dtb
-    location: Germany
+    location: Würzburg
     date_start: '2017-10-01'
     date_end: '2018-09-30'
     description: |2-
