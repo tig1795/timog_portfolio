@@ -32,10 +32,8 @@ content:
       tag: EB
     - name: Machine Learning
       tag: ML  
-    - name: Usability
-      tag: UX
-    - name: Web Design
-      tag: WD
+    - name: Usability & Prototyping
+      tag: UP
 
 design:
   columns: '1'
