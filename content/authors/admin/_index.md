@@ -9,8 +9,8 @@ superuser: true
 role: 'Data Scientist'
 
 # Status emoji
-status:
-  icon: 🍺
+# status:
+  #icon: 
 
 # Organizations/Affiliations
 #organizations:
