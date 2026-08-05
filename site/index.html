@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timo Günther — Data Scientist & SAP IBP Consultant</title>
-<meta name="description" content="Timo Günther — data scientist and SAP IBP consultant. Machine learning, NLP, supply chain planning. Portfolio, resumé and projects.">
-<meta property="og:title" content="Timo Günther — Data Scientist & SAP IBP Consultant">
-<meta property="og:description" content="Machine learning, NLP and supply chain planning with SAP IBP. Portfolio and resumé.">
+<title>Timo Günther — Data Scientist</title>
+<meta name="description" content="Timo Günther — data scientist from Würzburg. Machine learning, NLP and data-driven problem solving. Portfolio, resumé and projects.">
+<meta property="og:title" content="Timo Günther — Data Scientist">
+<meta property="og:description" content="Machine learning, NLP and data-driven problem solving. Portfolio and resumé.">
 <meta property="og:image" content="https://guenthertimo.de/assets/timo.jpg">
 <meta property="og:url" content="https://guenthertimo.de/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315120E'/%3E%3Cpath d='M10 32h6l4-14 6 28 6-22 5 12 4-6h13' stroke='%23E0A43B' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1717'/%3E%3Cpath d='M10 32h6l4-14 6 28 6-22 5 12 4-6h13' stroke='%233EC1B0' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#15120E;
-  --surface:#1E1A14;
-  --line:rgba(224,164,59,.16);
-  --ink:#EDE4D3;
-  --muted:#A79C89;
-  --amber:#E0A43B;
-  --red:#C84B3F;
+  --bg:#0E1717;
+  --surface:#152121;
+  --line:rgba(148,175,170,.15);
+  --ink:#E9EFED;
+  --muted:#93A6A2;
+  --teal:#3EC1B0;
+  --viridis:linear-gradient(90deg,#440154 0%,#31688E 30%,#21918C 55%,#5EC962 80%,#FDE725 100%);
   --maxw:1080px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -38,16 +38,15 @@ body{
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
-::selection{background:var(--amber);color:var(--bg)}
-a{color:var(--amber);text-decoration:none}
+::selection{background:var(--teal);color:var(--bg)}
+a{color:var(--teal);text-decoration:none}
 a:hover{text-decoration:underline;text-underline-offset:3px}
-:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
-.mono{font-family:'IBM Plex Mono',monospace}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}
 
 /* ---------- Nav ---------- */
 nav{
   position:sticky;top:0;z-index:50;
-  background:rgba(21,18,14,.88);
+  background:rgba(14,23,23,.88);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
@@ -56,70 +55,68 @@ nav{
   display:flex;align-items:center;gap:22px;
 }
 .nav-logo{
-  font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:14px;
+  font-family:'JetBrains Mono',monospace;font-weight:500;font-size:14px;
   color:var(--ink);letter-spacing:.04em;
 }
-.nav-logo:hover{text-decoration:none;color:var(--amber)}
+.nav-logo:hover{text-decoration:none;color:var(--teal)}
 .nav-links{display:flex;gap:18px;margin-left:auto;align-items:center;flex-wrap:wrap}
 .nav-links a{
-  font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);
+  font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--muted);
   letter-spacing:.03em;
 }
-.nav-links a:hover{color:var(--amber);text-decoration:none}
+.nav-links a:hover{color:var(--teal);text-decoration:none}
 .btn{
   display:inline-block;
-  font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;
-  padding:8px 16px;border:1px solid var(--amber);border-radius:3px;
-  color:var(--amber);letter-spacing:.03em;
+  font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;
+  padding:8px 16px;border:1px solid var(--teal);border-radius:4px;
+  color:var(--teal);letter-spacing:.03em;
   transition:background .18s,color .18s;
 }
-.btn:hover{background:var(--amber);color:var(--bg);text-decoration:none}
-.btn-solid{background:var(--amber);color:var(--bg)}
-.btn-solid:hover{background:#f0b452}
+.btn:hover{background:var(--teal);color:var(--bg);text-decoration:none}
+.btn-solid{background:var(--teal);color:var(--bg)}
+.btn-solid:hover{background:#5AD6C6}
 
 /* ---------- Hero ---------- */
 .hero{
   max-width:var(--maxw);margin:0 auto;
-  padding:72px 24px 40px;
-  display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
+  padding:76px 24px 44px;
+  display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:center;
 }
 .eyebrow{
-  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--amber);
+  font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--teal);
   letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;
 }
 h1{
-  font-family:'Fraunces',serif;font-weight:500;
-  font-size:clamp(44px,6.4vw,72px);
-  line-height:1.04;letter-spacing:-.01em;margin-bottom:22px;
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:600;
+  font-size:clamp(42px,6vw,68px);
+  line-height:1.05;letter-spacing:-.02em;margin-bottom:22px;
 }
-h1 em{font-style:italic;color:var(--amber)}
-.hero p.lead{color:var(--muted);max-width:52ch;margin-bottom:28px}
+h1 em{
+  font-style:normal;
+  background:var(--viridis);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.hero p.lead{color:var(--muted);max-width:54ch;margin-bottom:28px}
 .hero p.lead strong{color:var(--ink);font-weight:500}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
 .socials{display:flex;gap:16px}
 .socials a{
-  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted);
+  font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);
 }
-.socials a:hover{color:var(--amber);text-decoration:none}
+.socials a:hover{color:var(--teal);text-decoration:none}
 
-.portrait-wrap{position:relative;justify-self:center}
+.portrait-wrap{justify-self:center;text-align:center}
 .portrait{
-  width:min(320px,80vw);aspect-ratio:4/5;object-fit:cover;
-  border-radius:160px 160px 6px 6px;
+  width:min(210px,55vw);aspect-ratio:4/5;object-fit:cover;
+  border-radius:14px;
   border:1px solid var(--line);
-  display:block;position:relative;z-index:2;
-  filter:saturate(.94);
-}
-.portrait-frame{
-  position:absolute;inset:0;
-  border-radius:160px 160px 6px 6px;
-  border:1px solid var(--amber);
-  transform:translate(14px,14px);z-index:1;
+  display:block;margin:0 auto;
+  box-shadow:0 0 0 4px var(--bg),0 0 0 5px rgba(62,193,176,.35);
 }
 .portrait-caption{
-  position:relative;z-index:2;
-  font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);
-  text-align:center;margin-top:26px;letter-spacing:.04em;
+  font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);
+  margin-top:18px;letter-spacing:.04em;
 }
 
 /* ---------- Feature importance (signature) ---------- */
@@ -127,22 +124,24 @@ h1 em{font-style:italic;color:var(--amber)}
   max-width:var(--maxw);margin:0 auto;padding:8px 24px 72px;
 }
 .fi-box{
-  border:1px solid var(--line);border-radius:6px;background:var(--surface);
+  border:1px solid var(--line);border-radius:8px;background:var(--surface);
   padding:26px 28px;
 }
 .fi-title{
-  font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);
+  font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--muted);
   margin-bottom:20px;letter-spacing:.02em;
 }
-.fi-title b{color:var(--amber);font-weight:500}
+.fi-title b{color:var(--teal);font-weight:500}
 .fi-row{
-  display:grid;grid-template-columns:210px 1fr 52px;gap:14px;align-items:center;
+  display:grid;grid-template-columns:220px 1fr 52px;gap:14px;align-items:center;
   margin-bottom:11px;
 }
-.fi-label{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink)}
-.fi-bar{height:10px;background:rgba(224,164,59,.10);border-radius:2px;overflow:hidden}
+.fi-label{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink)}
+.fi-bar{height:10px;background:rgba(148,175,170,.10);border-radius:3px;overflow:hidden}
 .fi-fill{
-  height:100%;background:var(--amber);border-radius:2px;
+  height:100%;border-radius:3px;
+  background:var(--viridis);
+  background-size:var(--barmax,600px) 100%;
   transform-origin:left;transform:scaleX(0);
   animation:grow .9s cubic-bezier(.2,.7,.2,1) forwards;
 }
@@ -152,100 +151,99 @@ h1 em{font-style:italic;color:var(--amber)}
 .fi-row:nth-child(6) .fi-fill{animation-delay:.32s}
 .fi-row:nth-child(7) .fi-fill{animation-delay:.40s}
 @keyframes grow{to{transform:scaleX(1)}}
-.fi-val{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);text-align:right}
+.fi-val{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);text-align:right}
 
 /* ---------- Sections ---------- */
 section{max-width:var(--maxw);margin:0 auto;padding:64px 24px}
 .divider{
   max-width:var(--maxw);margin:0 auto;padding:0 24px;
-  color:var(--amber);opacity:.5;
+  color:var(--teal);opacity:.45;
 }
 .divider svg{display:block;width:100%;height:26px}
 h2{
-  font-family:'Fraunces',serif;font-weight:500;font-size:clamp(30px,3.6vw,40px);
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,38px);
   margin-bottom:8px;letter-spacing:-.01em;
 }
 .section-sub{
-  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted);
+  font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);
   margin-bottom:42px;
 }
 
-/* ---------- Timeline (Experience / Education) ---------- */
+/* ---------- Timeline ---------- */
 .entry{
   display:grid;grid-template-columns:190px 1fr;gap:28px;
   padding:28px 0;border-top:1px solid var(--line);
 }
 .entry:last-child{border-bottom:1px solid var(--line)}
 .entry-when{
-  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--amber);
+  font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--teal);
   padding-top:4px;
 }
 .entry-when span{display:block;color:var(--muted);margin-top:5px;font-size:12px}
 .entry h3{
-  font-family:'Fraunces',serif;font-weight:500;font-size:23px;margin-bottom:4px;
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:22px;margin-bottom:4px;
 }
 .entry .org{color:var(--muted);font-size:15px;margin-bottom:12px}
 .entry .org a{color:var(--muted);border-bottom:1px dotted var(--muted)}
-.entry .org a:hover{color:var(--amber);text-decoration:none;border-color:var(--amber)}
+.entry .org a:hover{color:var(--teal);text-decoration:none;border-color:var(--teal)}
 .entry ul{list-style:none;color:var(--muted);font-size:15.5px}
 .entry ul li{padding-left:20px;position:relative;margin-bottom:7px}
-.entry ul li::before{content:'—';position:absolute;left:0;color:var(--amber)}
+.entry ul li::before{content:'—';position:absolute;left:0;color:var(--teal)}
 .entry p.note{color:var(--muted);font-size:15.5px}
 .grade{
-  display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;
-  color:var(--amber);border:1px solid var(--line);border-radius:3px;
+  display:inline-block;font-family:'JetBrains Mono',monospace;font-size:12px;
+  color:var(--teal);border:1px solid var(--line);border-radius:4px;
   padding:2px 9px;margin-left:8px;vertical-align:2px;
 }
 
 /* ---------- Certifications ---------- */
 .certs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .cert{
-  border:1px solid var(--line);border-radius:6px;background:var(--surface);
+  border:1px solid var(--line);border-radius:8px;background:var(--surface);
   padding:24px;display:flex;flex-direction:column;gap:10px;
 }
-.cert.primary{border-color:rgba(224,164,59,.45)}
-.cert-org{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);letter-spacing:.06em;text-transform:uppercase}
-.cert h3{font-family:'Fraunces',serif;font-weight:500;font-size:19px;line-height:1.3}
+.cert-org{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--teal);letter-spacing:.06em;text-transform:uppercase}
+.cert h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:18.5px;line-height:1.3}
 .cert p{color:var(--muted);font-size:14.5px;flex:1}
-.cert .cert-meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
-.cert a.cert-link{font-family:'IBM Plex Mono',monospace;font-size:12.5px}
+.cert .cert-meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+.cert a.cert-link{font-family:'JetBrains Mono',monospace;font-size:12.5px}
 
 /* ---------- Projects ---------- */
 .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
 .filter{
-  font-family:'IBM Plex Mono',monospace;font-size:12.5px;
-  background:none;border:1px solid var(--line);border-radius:3px;
+  font-family:'JetBrains Mono',monospace;font-size:12.5px;
+  background:none;border:1px solid var(--line);border-radius:4px;
   color:var(--muted);padding:7px 14px;cursor:pointer;letter-spacing:.02em;
   transition:color .15s,border-color .15s;
 }
-.filter:hover{color:var(--amber);border-color:var(--amber)}
-.filter.active{background:var(--amber);border-color:var(--amber);color:var(--bg)}
+.filter:hover{color:var(--teal);border-color:var(--teal)}
+.filter.active{background:var(--teal);border-color:var(--teal);color:var(--bg)}
 .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .project{
-  border:1px solid var(--line);border-radius:6px;background:var(--surface);
+  border:1px solid var(--line);border-radius:8px;background:var(--surface);
   padding:26px;display:flex;flex-direction:column;gap:12px;
   transition:border-color .18s,transform .18s;position:relative;
 }
-.project:hover{border-color:rgba(224,164,59,.5);transform:translateY(-3px)}
+.project:hover{border-color:rgba(62,193,176,.55);transform:translateY(-3px)}
 .project.hidden{display:none}
-.project-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.project-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .project-tag{
-  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--amber);
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--teal);
 }
-.project-tag.red{color:var(--red)}
-.project h3{font-family:'Fraunces',serif;font-weight:500;font-size:21px;line-height:1.28}
+.project h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:20px;line-height:1.28}
 .project h3 a{color:var(--ink)}
 .project h3 a::after{content:'';position:absolute;inset:0}
-.project h3 a:hover{text-decoration:none;color:var(--amber)}
+.project h3 a:hover{text-decoration:none;color:var(--teal)}
 .project p{color:var(--muted);font-size:14.5px;flex:1}
-.project .project-link{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
-.project:hover .project-link{color:var(--amber)}
-.project.featured{border-color:rgba(224,164,59,.45)}
+.project .project-link{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+.project:hover .project-link{color:var(--teal)}
+.project.featured{border-color:rgba(62,193,176,.5)}
 .featured-badge{
-  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--bg);background:var(--amber);
-  border-radius:2px;padding:2px 8px;
+  font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--bg);
+  background:var(--viridis);
+  border-radius:3px;padding:2px 8px;
 }
 
 /* ---------- Contact / Footer ---------- */
@@ -255,19 +253,19 @@ h2{
 footer{
   border-top:1px solid var(--line);
   padding:26px 24px;text-align:center;
-  font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);
+  font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);
 }
 footer a{color:var(--muted)}
-footer a:hover{color:var(--amber)}
+footer a:hover{color:var(--teal)}
 
 /* ---------- Responsive ---------- */
 @media (max-width:880px){
-  .hero{grid-template-columns:1fr;gap:44px;padding-top:52px}
+  .hero{grid-template-columns:1fr;gap:40px;padding-top:52px}
   .portrait-wrap{order:-1}
   .certs{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
   .entry{grid-template-columns:1fr;gap:8px}
-  .fi-row{grid-template-columns:140px 1fr 46px;gap:10px}
+  .fi-row{grid-template-columns:150px 1fr 46px;gap:10px}
 }
 </style>
 </head>
@@ -275,7 +273,7 @@ footer a:hover{color:var(--amber)}
 
 <nav aria-label="Main">
   <div class="nav-inner">
-    <a class="nav-logo" href="#top">timo.günther</a>
+    <a class="nav-logo" href="#top">Timo Günther</a>
     <div class="nav-links">
       <a href="#work">work</a>
       <a href="#experience">experience</a>
@@ -289,9 +287,9 @@ footer a:hover{color:var(--amber)}
 
 <header class="hero" id="top">
   <div>
-    <p class="eyebrow">Data Scientist · SAP IBP Consultant</p>
+    <p class="eyebrow">Data Scientist · Machine Learning &amp; NLP</p>
     <h1>Turning data<br>into <em>decisions</em>.</h1>
-    <p class="lead">👋 Hello! I'm Timo — a data scientist and SAP IBP consultant based in Würzburg, Germany. I help companies plan their supply chains with <strong>SAP Integrated Business Planning</strong> and love solving complex problems with <strong>machine learning, NLP and data-driven insights</strong>. In my daily project work, I actively use LLM-based AI assistants to work smarter and faster.</p>
+    <p class="lead">👋 Hello! I'm Timo — a data scientist from Würzburg, Germany. I love solving complex problems with <strong>machine learning, NLP and data-driven insights</strong> — from predicting hit songs with XGBoost and Transformers to building enterprise data pipelines and integrations in my day-to-day consulting work. LLM-based AI assistants are a natural part of my toolkit.</p>
     <div class="hero-cta">
       <a class="btn btn-solid" href="#work">See my work</a>
       <a class="btn" href="files/resume.pdf" target="_blank" rel="noopener">Download resumé</a>
@@ -303,21 +301,20 @@ footer a:hover{color:var(--amber)}
     </div>
   </div>
   <div class="portrait-wrap">
-    <div class="portrait-frame" aria-hidden="true"></div>
-    <img class="portrait" src="assets/timo.jpg" alt="Timo Günther standing in a street in Würzburg, wearing a leather jacket" width="720" height="900">
-    <p class="portrait-caption">Würzburg, DE — probably thinking about key figures</p>
+    <img class="portrait" src="assets/timo.jpg" alt="Timo Günther in a street in Würzburg" width="420" height="525">
+    <p class="portrait-caption">Würzburg, DE — probably overfitting something</p>
   </div>
 </header>
 
 <div class="fi" aria-label="Skill overview, styled as a feature importance chart">
   <div class="fi-box">
-    <p class="fi-title mono">&gt; model.feature_importances_ <b># what I bring to the table</b></p>
-    <div class="fi-row"><span class="fi-label">sap_ibp</span><div class="fi-bar"><div class="fi-fill" style="width:94%"></div></div><span class="fi-val">0.94</span></div>
-    <div class="fi-row"><span class="fi-label">python_ml</span><div class="fi-bar"><div class="fi-fill" style="width:88%"></div></div><span class="fi-val">0.88</span></div>
-    <div class="fi-row"><span class="fi-label">cids_integration</span><div class="fi-bar"><div class="fi-fill" style="width:81%"></div></div><span class="fi-val">0.81</span></div>
-    <div class="fi-row"><span class="fi-label">nlp_transformers</span><div class="fi-bar"><div class="fi-fill" style="width:74%"></div></div><span class="fi-val">0.74</span></div>
-    <div class="fi-row"><span class="fi-label">data_visualization</span><div class="fi-bar"><div class="fi-fill" style="width:66%"></div></div><span class="fi-val">0.66</span></div>
-    <div class="fi-row"><span class="fi-label">stakeholder_comms</span><div class="fi-bar"><div class="fi-fill" style="width:58%"></div></div><span class="fi-val">0.58</span></div>
+    <p class="fi-title">&gt; model.feature_importances_ <b># my data science toolkit</b></p>
+    <div class="fi-row"><span class="fi-label">machine_learning</span><div class="fi-bar"><div class="fi-fill" style="width:95%"></div></div><span class="fi-val">0.95</span></div>
+    <div class="fi-row"><span class="fi-label">nlp_transformers</span><div class="fi-bar"><div class="fi-fill" style="width:88%"></div></div><span class="fi-val">0.88</span></div>
+    <div class="fi-row"><span class="fi-label">python_pandas_sklearn</span><div class="fi-bar"><div class="fi-fill" style="width:86%"></div></div><span class="fi-val">0.86</span></div>
+    <div class="fi-row"><span class="fi-label">data_visualization</span><div class="fi-bar"><div class="fi-fill" style="width:78%"></div></div><span class="fi-val">0.78</span></div>
+    <div class="fi-row"><span class="fi-label">sql_data_pipelines</span><div class="fi-bar"><div class="fi-fill" style="width:70%"></div></div><span class="fi-val">0.70</span></div>
+    <div class="fi-row"><span class="fi-label">llm_tooling</span><div class="fi-bar"><div class="fi-fill" style="width:64%"></div></div><span class="fi-val">0.64</span></div>
   </div>
 </div>
 
@@ -362,25 +359,25 @@ footer a:hover{color:var(--amber)}
       <span class="project-link">github.com/tig1795/Stylometry-Term-paper →</span>
     </article>
     <article class="project" data-tags="up">
-      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <div class="project-top"><span class="project-tag">Usability &amp; Prototyping</span></div>
       <h3><a href="https://github.com/tig1795/mcs_prttyp_chefk" target="_blank" rel="noopener">Chefkoch.de Prototype</a></h3>
       <p>A functional prototype for a more user-friendly version of the Chefkoch website, backed by an integrated SQL database — including login, registration and search functionality.</p>
       <span class="project-link">github.com/tig1795/mcs_prttyp_chefk →</span>
     </article>
     <article class="project" data-tags="up">
-      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <div class="project-top"><span class="project-tag">Usability &amp; Prototyping</span></div>
       <h3><a href="https://www.dropbox.com/sh/pswrsdgwiigxk2i/AAChD2dBjjh12RTBViOjnQgWa?dl=0" target="_blank" rel="noopener">Evaluating University Websites</a></h3>
       <p>Assessing the student perspective on the websites of the University of Würzburg's degree programs Media Communication (MK) and Human-Computer Systems (MCS).</p>
       <span class="project-link">dropbox.com — research files →</span>
     </article>
     <article class="project" data-tags="up">
-      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <div class="project-top"><span class="project-tag">Usability &amp; Prototyping</span></div>
       <h3><a href="https://github.com/tig1795/F1_dh_prjct" target="_blank" rel="noopener">Formula 1 Web Page</a></h3>
       <p>A website prototype subjected to a Nielsen heuristic evaluation, enabling usability assessment and user experience analysis. The insights informed iterative improvements.</p>
       <span class="project-link">github.com/tig1795/F1_dh_prjct →</span>
     </article>
     <article class="project" data-tags="up">
-      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <div class="project-top"><span class="project-tag">Usability &amp; Prototyping</span></div>
       <h3><a href="https://github.com/tig1795/diw_web_bl" target="_blank" rel="noopener">Bundesliga Champions Database</a></h3>
       <p>A dedicated website highlighting German football champions, seamlessly linked to an SQL database and designed for easy expansion through user interactions.</p>
       <span class="project-link">github.com/tig1795/diw_web_bl →</span>
@@ -407,14 +404,14 @@ footer a:hover{color:var(--amber)}
   <div class="entry">
     <div class="entry-when">Feb 2024 — today<span>Würzburg</span></div>
     <div>
-      <h3>Consultant SAP IBP</h3>
-      <p class="org"><a href="https://www.tivtal.com/" target="_blank" rel="noopener">TIVTAL GmbH</a> — Supply Chain Planning</p>
+      <h3>Consultant</h3>
+      <p class="org"><a href="https://www.tivtal.com/" target="_blank" rel="noopener">TIVTAL GmbH</a> — Enterprise Planning Consulting</p>
       <ul>
-        <li>Implementing SAP IBP solutions for demand and supply planning at industrial clients — S&amp;OP processes, key figures, planning operators, planner workspaces.</li>
-        <li>Designing and building CI-DS (Cloud Integration for Data Services) integrations, including REST API interfaces (e.g. Salesforce) and complex data flows between IBP and SAP ECC.</li>
+        <li>Designing and building data integrations and pipelines between enterprise systems — including REST API interfaces (e.g. Salesforce) and complex CI-DS data flows.</li>
         <li>Data analysis and quality assurance: test case design, configuration comparisons, go-live support.</li>
+        <li>Implementing planning solutions (SAP IBP) for demand and supply planning at industrial clients.</li>
         <li>Creating technical documentation, decision briefs and end-user training material.</li>
-        <li>Actively using LLM-based AI assistants in day-to-day project work — from debugging and configuration to documentation.</li>
+        <li>Actively using LLM-based AI assistants in day-to-day project work — from debugging and data analysis to documentation.</li>
       </ul>
     </div>
   </div>
@@ -502,10 +499,10 @@ footer a:hover{color:var(--amber)}
   <h2>Certifications</h2>
   <p class="section-sub">// verified credentials</p>
   <div class="certs">
-    <div class="cert primary">
+    <div class="cert">
       <span class="cert-org">SAP</span>
       <h3>SAP Certified — SAP Integrated Business Planning</h3>
-      <p>Certification exam (C_IBP_2502) covering SAP supply chain planning with SAP IBP, verifying the ability to apply this knowledge practically in implementation projects.</p>
+      <p>Certification exam (C_IBP_2502) covering supply chain planning with SAP IBP, verifying the ability to apply this knowledge practically in implementation projects.</p>
       <span class="cert-meta">Issued May 2025 · valid until Apr 2027</span>
       <a class="cert-link" href="https://www.credly.com/badges/fa24e713-3e4a-49ec-bb41-464bad9bf1d0" target="_blank" rel="noopener">verify on credly →</a>
     </div>
@@ -534,7 +531,7 @@ footer a:hover{color:var(--amber)}
 
 <section id="contact" class="contact">
   <h2>Let's talk.</h2>
-  <p>Whether it's supply chain planning, a machine learning idea, or just a good conversation about data — my inbox is open.</p>
+  <p>Whether it's a machine learning idea, a dataset with a story to tell, or just a good conversation about data — my inbox is open.</p>
   <div class="hero-cta" style="justify-content:center">
     <a class="btn btn-solid" href="mailto:timognth@icloud.com">timognth@icloud.com</a>
     <a class="btn" href="https://www.linkedin.com/in/timo-guenther" target="_blank" rel="noopener">LinkedIn</a>
