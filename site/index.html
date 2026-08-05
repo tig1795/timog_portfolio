@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timo Günther — Data Scientist & SAP IBP Consultant</title>
+<meta name="description" content="Timo Günther — data scientist and SAP IBP consultant. Machine learning, NLP, supply chain planning. Portfolio, resumé and projects.">
+<meta property="og:title" content="Timo Günther — Data Scientist & SAP IBP Consultant">
+<meta property="og:description" content="Machine learning, NLP and supply chain planning with SAP IBP. Portfolio and resumé.">
+<meta property="og:image" content="https://guenthertimo.de/assets/timo.jpg">
+<meta property="og:url" content="https://guenthertimo.de/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315120E'/%3E%3Cpath d='M10 32h6l4-14 6 28 6-22 5 12 4-6h13' stroke='%23E0A43B' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#15120E;
+  --surface:#1E1A14;
+  --line:rgba(224,164,59,.16);
+  --ink:#EDE4D3;
+  --muted:#A79C89;
+  --amber:#E0A43B;
+  --red:#C84B3F;
+  --maxw:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Archivo',system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--amber);color:var(--bg)}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
+.mono{font-family:'IBM Plex Mono',monospace}
+
+/* ---------- Nav ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(21,18,14,.88);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--maxw);margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;gap:22px;
+}
+.nav-logo{
+  font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:14px;
+  color:var(--ink);letter-spacing:.04em;
+}
+.nav-logo:hover{text-decoration:none;color:var(--amber)}
+.nav-links{display:flex;gap:18px;margin-left:auto;align-items:center;flex-wrap:wrap}
+.nav-links a{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);
+  letter-spacing:.03em;
+}
+.nav-links a:hover{color:var(--amber);text-decoration:none}
+.btn{
+  display:inline-block;
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;
+  padding:8px 16px;border:1px solid var(--amber);border-radius:3px;
+  color:var(--amber);letter-spacing:.03em;
+  transition:background .18s,color .18s;
+}
+.btn:hover{background:var(--amber);color:var(--bg);text-decoration:none}
+.btn-solid{background:var(--amber);color:var(--bg)}
+.btn-solid:hover{background:#f0b452}
+
+/* ---------- Hero ---------- */
+.hero{
+  max-width:var(--maxw);margin:0 auto;
+  padding:72px 24px 40px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
+}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--amber);
+  letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;
+}
+h1{
+  font-family:'Fraunces',serif;font-weight:500;
+  font-size:clamp(44px,6.4vw,72px);
+  line-height:1.04;letter-spacing:-.01em;margin-bottom:22px;
+}
+h1 em{font-style:italic;color:var(--amber)}
+.hero p.lead{color:var(--muted);max-width:52ch;margin-bottom:28px}
+.hero p.lead strong{color:var(--ink);font-weight:500}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+.socials{display:flex;gap:16px}
+.socials a{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted);
+}
+.socials a:hover{color:var(--amber);text-decoration:none}
+
+.portrait-wrap{position:relative;justify-self:center}
+.portrait{
+  width:min(320px,80vw);aspect-ratio:4/5;object-fit:cover;
+  border-radius:160px 160px 6px 6px;
+  border:1px solid var(--line);
+  display:block;position:relative;z-index:2;
+  filter:saturate(.94);
+}
+.portrait-frame{
+  position:absolute;inset:0;
+  border-radius:160px 160px 6px 6px;
+  border:1px solid var(--amber);
+  transform:translate(14px,14px);z-index:1;
+}
+.portrait-caption{
+  position:relative;z-index:2;
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);
+  text-align:center;margin-top:26px;letter-spacing:.04em;
+}
+
+/* ---------- Feature importance (signature) ---------- */
+.fi{
+  max-width:var(--maxw);margin:0 auto;padding:8px 24px 72px;
+}
+.fi-box{
+  border:1px solid var(--line);border-radius:6px;background:var(--surface);
+  padding:26px 28px;
+}
+.fi-title{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);
+  margin-bottom:20px;letter-spacing:.02em;
+}
+.fi-title b{color:var(--amber);font-weight:500}
+.fi-row{
+  display:grid;grid-template-columns:210px 1fr 52px;gap:14px;align-items:center;
+  margin-bottom:11px;
+}
+.fi-label{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink)}
+.fi-bar{height:10px;background:rgba(224,164,59,.10);border-radius:2px;overflow:hidden}
+.fi-fill{
+  height:100%;background:var(--amber);border-radius:2px;
+  transform-origin:left;transform:scaleX(0);
+  animation:grow .9s cubic-bezier(.2,.7,.2,1) forwards;
+}
+.fi-row:nth-child(3) .fi-fill{animation-delay:.08s}
+.fi-row:nth-child(4) .fi-fill{animation-delay:.16s}
+.fi-row:nth-child(5) .fi-fill{animation-delay:.24s}
+.fi-row:nth-child(6) .fi-fill{animation-delay:.32s}
+.fi-row:nth-child(7) .fi-fill{animation-delay:.40s}
+@keyframes grow{to{transform:scaleX(1)}}
+.fi-val{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);text-align:right}
+
+/* ---------- Sections ---------- */
+section{max-width:var(--maxw);margin:0 auto;padding:64px 24px}
+.divider{
+  max-width:var(--maxw);margin:0 auto;padding:0 24px;
+  color:var(--amber);opacity:.5;
+}
+.divider svg{display:block;width:100%;height:26px}
+h2{
+  font-family:'Fraunces',serif;font-weight:500;font-size:clamp(30px,3.6vw,40px);
+  margin-bottom:8px;letter-spacing:-.01em;
+}
+.section-sub{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted);
+  margin-bottom:42px;
+}
+
+/* ---------- Timeline (Experience / Education) ---------- */
+.entry{
+  display:grid;grid-template-columns:190px 1fr;gap:28px;
+  padding:28px 0;border-top:1px solid var(--line);
+}
+.entry:last-child{border-bottom:1px solid var(--line)}
+.entry-when{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--amber);
+  padding-top:4px;
+}
+.entry-when span{display:block;color:var(--muted);margin-top:5px;font-size:12px}
+.entry h3{
+  font-family:'Fraunces',serif;font-weight:500;font-size:23px;margin-bottom:4px;
+}
+.entry .org{color:var(--muted);font-size:15px;margin-bottom:12px}
+.entry .org a{color:var(--muted);border-bottom:1px dotted var(--muted)}
+.entry .org a:hover{color:var(--amber);text-decoration:none;border-color:var(--amber)}
+.entry ul{list-style:none;color:var(--muted);font-size:15.5px}
+.entry ul li{padding-left:20px;position:relative;margin-bottom:7px}
+.entry ul li::before{content:'—';position:absolute;left:0;color:var(--amber)}
+.entry p.note{color:var(--muted);font-size:15.5px}
+.grade{
+  display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;
+  color:var(--amber);border:1px solid var(--line);border-radius:3px;
+  padding:2px 9px;margin-left:8px;vertical-align:2px;
+}
+
+/* ---------- Certifications ---------- */
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cert{
+  border:1px solid var(--line);border-radius:6px;background:var(--surface);
+  padding:24px;display:flex;flex-direction:column;gap:10px;
+}
+.cert.primary{border-color:rgba(224,164,59,.45)}
+.cert-org{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);letter-spacing:.06em;text-transform:uppercase}
+.cert h3{font-family:'Fraunces',serif;font-weight:500;font-size:19px;line-height:1.3}
+.cert p{color:var(--muted);font-size:14.5px;flex:1}
+.cert .cert-meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+.cert a.cert-link{font-family:'IBM Plex Mono',monospace;font-size:12.5px}
+
+/* ---------- Projects ---------- */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
+.filter{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;
+  background:none;border:1px solid var(--line);border-radius:3px;
+  color:var(--muted);padding:7px 14px;cursor:pointer;letter-spacing:.02em;
+  transition:color .15s,border-color .15s;
+}
+.filter:hover{color:var(--amber);border-color:var(--amber)}
+.filter.active{background:var(--amber);border-color:var(--amber);color:var(--bg)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{
+  border:1px solid var(--line);border-radius:6px;background:var(--surface);
+  padding:26px;display:flex;flex-direction:column;gap:12px;
+  transition:border-color .18s,transform .18s;position:relative;
+}
+.project:hover{border-color:rgba(224,164,59,.5);transform:translateY(-3px)}
+.project.hidden{display:none}
+.project-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.project-tag{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--amber);
+}
+.project-tag.red{color:var(--red)}
+.project h3{font-family:'Fraunces',serif;font-weight:500;font-size:21px;line-height:1.28}
+.project h3 a{color:var(--ink)}
+.project h3 a::after{content:'';position:absolute;inset:0}
+.project h3 a:hover{text-decoration:none;color:var(--amber)}
+.project p{color:var(--muted);font-size:14.5px;flex:1}
+.project .project-link{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+.project:hover .project-link{color:var(--amber)}
+.project.featured{border-color:rgba(224,164,59,.45)}
+.featured-badge{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--bg);background:var(--amber);
+  border-radius:2px;padding:2px 8px;
+}
+
+/* ---------- Contact / Footer ---------- */
+.contact{text-align:center;padding-bottom:80px}
+.contact h2{margin-bottom:16px}
+.contact p{color:var(--muted);max-width:46ch;margin:0 auto 30px}
+footer{
+  border-top:1px solid var(--line);
+  padding:26px 24px;text-align:center;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);
+}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--amber)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr;gap:44px;padding-top:52px}
+  .portrait-wrap{order:-1}
+  .certs{grid-template-columns:1fr}
+  .projects{grid-template-columns:1fr}
+  .entry{grid-template-columns:1fr;gap:8px}
+  .fi-row{grid-template-columns:140px 1fr 46px;gap:10px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top">timo.günther</a>
+    <div class="nav-links">
+      <a href="#work">work</a>
+      <a href="#experience">experience</a>
+      <a href="#education">education</a>
+      <a href="#certifications">certifications</a>
+      <a href="#contact">contact</a>
+      <a class="btn" href="files/resume.pdf" target="_blank" rel="noopener">resumé.pdf ↓</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <p class="eyebrow">Data Scientist · SAP IBP Consultant</p>
+    <h1>Turning data<br>into <em>decisions</em>.</h1>
+    <p class="lead">👋 Hello! I'm Timo — a data scientist and SAP IBP consultant based in Würzburg, Germany. I help companies plan their supply chains with <strong>SAP Integrated Business Planning</strong> and love solving complex problems with <strong>machine learning, NLP and data-driven insights</strong>. In my daily project work, I actively use LLM-based AI assistants to work smarter and faster.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#work">See my work</a>
+      <a class="btn" href="files/resume.pdf" target="_blank" rel="noopener">Download resumé</a>
+    </div>
+    <div class="socials">
+      <a href="mailto:timognth@icloud.com">mail</a>
+      <a href="https://www.linkedin.com/in/timo-guenther" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/tig1795" target="_blank" rel="noopener">github</a>
+    </div>
+  </div>
+  <div class="portrait-wrap">
+    <div class="portrait-frame" aria-hidden="true"></div>
+    <img class="portrait" src="assets/timo.jpg" alt="Timo Günther standing in a street in Würzburg, wearing a leather jacket" width="720" height="900">
+    <p class="portrait-caption">Würzburg, DE — probably thinking about key figures</p>
+  </div>
+</header>
+
+<div class="fi" aria-label="Skill overview, styled as a feature importance chart">
+  <div class="fi-box">
+    <p class="fi-title mono">&gt; model.feature_importances_ <b># what I bring to the table</b></p>
+    <div class="fi-row"><span class="fi-label">sap_ibp</span><div class="fi-bar"><div class="fi-fill" style="width:94%"></div></div><span class="fi-val">0.94</span></div>
+    <div class="fi-row"><span class="fi-label">python_ml</span><div class="fi-bar"><div class="fi-fill" style="width:88%"></div></div><span class="fi-val">0.88</span></div>
+    <div class="fi-row"><span class="fi-label">cids_integration</span><div class="fi-bar"><div class="fi-fill" style="width:81%"></div></div><span class="fi-val">0.81</span></div>
+    <div class="fi-row"><span class="fi-label">nlp_transformers</span><div class="fi-bar"><div class="fi-fill" style="width:74%"></div></div><span class="fi-val">0.74</span></div>
+    <div class="fi-row"><span class="fi-label">data_visualization</span><div class="fi-bar"><div class="fi-fill" style="width:66%"></div></div><span class="fi-val">0.66</span></div>
+    <div class="fi-row"><span class="fi-label">stakeholder_comms</span><div class="fi-bar"><div class="fi-fill" style="width:58%"></div></div><span class="fi-val">0.58</span></div>
+  </div>
+</div>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1032 26" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M0 13h80l14-9 18 18 14-13 10 6 22-11 16 14 12-5h120l14 8 18-16 12 10 16-6 20 9 14-11h130l12-7 20 14 14-10 12 8 18-12 16 10h140l14 9 18-18 14 13 10-6 22 11 16-14 12 5h136"/>
+  </svg>
+</div>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <p class="section-sub">// nine projects — machine learning, usability &amp; prototyping, e-publishing</p>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button class="filter active" data-filter="all">all</button>
+    <button class="filter" data-filter="ml">machine learning</button>
+    <button class="filter" data-filter="up">usability &amp; prototyping</button>
+    <button class="filter" data-filter="eb">e-book</button>
+  </div>
+  <div class="projects">
+    <article class="project featured" data-tags="ml">
+      <div class="project-top"><span class="project-tag">Machine Learning</span><span class="featured-badge">Master's thesis · 1.0</span></div>
+      <h3><a href="https://github.com/tig1795/predicting_hits_ML_MA" target="_blank" rel="noopener">Hit Song Prediction</a></h3>
+      <p>What makes a song a hit? A comparative analysis of two datasets with 40,000+ songs and their feature importance in predicting chart success — using XGBoost and Transformer-based NLP feature extraction on lyrics and audio features to reveal which characteristics actually drive hits.</p>
+      <span class="project-link">github.com/tig1795/predicting_hits_ML_MA →</span>
+    </article>
+    <article class="project" data-tags="ml">
+      <div class="project-top"><span class="project-tag">Machine Learning</span></div>
+      <h3><a href="https://github.com/tig1795/word_embeddings_Lexika" target="_blank" rel="noopener">Word Embeddings</a></h3>
+      <p>Can BERT detect how word meanings change over time? A comprehensive investigation comparing Word2Vec and BERT models to trace semantic shifts across decades of language use.</p>
+      <span class="project-link">github.com/tig1795/word_embeddings_Lexika →</span>
+    </article>
+    <article class="project" data-tags="ml">
+      <div class="project-top"><span class="project-tag">Machine Learning</span></div>
+      <h3><a href="https://github.com/tig1795/BBC_News_cluster" target="_blank" rel="noopener">Clustering BBC News</a></h3>
+      <p>Various clustering algorithms applied to a corpus of BBC news articles, with a comparative evaluation of which algorithm is best suited for assigning individual news categories.</p>
+      <span class="project-link">github.com/tig1795/BBC_News_cluster →</span>
+    </article>
+    <article class="project" data-tags="ml">
+      <div class="project-top"><span class="project-tag">Machine Learning</span></div>
+      <h3><a href="https://github.com/tig1795/Stylometry-Term-paper" target="_blank" rel="noopener">Clustering Music Genres</a></h3>
+      <p>Can music genres be distinguished based on song lyrics alone? Different clustering methods applied to a corpus of lyrics to find out where the genre boundaries really lie.</p>
+      <span class="project-link">github.com/tig1795/Stylometry-Term-paper →</span>
+    </article>
+    <article class="project" data-tags="up">
+      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <h3><a href="https://github.com/tig1795/mcs_prttyp_chefk" target="_blank" rel="noopener">Chefkoch.de Prototype</a></h3>
+      <p>A functional prototype for a more user-friendly version of the Chefkoch website, backed by an integrated SQL database — including login, registration and search functionality.</p>
+      <span class="project-link">github.com/tig1795/mcs_prttyp_chefk →</span>
+    </article>
+    <article class="project" data-tags="up">
+      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <h3><a href="https://www.dropbox.com/sh/pswrsdgwiigxk2i/AAChD2dBjjh12RTBViOjnQgWa?dl=0" target="_blank" rel="noopener">Evaluating University Websites</a></h3>
+      <p>Assessing the student perspective on the websites of the University of Würzburg's degree programs Media Communication (MK) and Human-Computer Systems (MCS).</p>
+      <span class="project-link">dropbox.com — research files →</span>
+    </article>
+    <article class="project" data-tags="up">
+      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <h3><a href="https://github.com/tig1795/F1_dh_prjct" target="_blank" rel="noopener">Formula 1 Web Page</a></h3>
+      <p>A website prototype subjected to a Nielsen heuristic evaluation, enabling usability assessment and user experience analysis. The insights informed iterative improvements.</p>
+      <span class="project-link">github.com/tig1795/F1_dh_prjct →</span>
+    </article>
+    <article class="project" data-tags="up">
+      <div class="project-top"><span class="project-tag red">Usability &amp; Prototyping</span></div>
+      <h3><a href="https://github.com/tig1795/diw_web_bl" target="_blank" rel="noopener">Bundesliga Champions Database</a></h3>
+      <p>A dedicated website highlighting German football champions, seamlessly linked to an SQL database and designed for easy expansion through user interactions.</p>
+      <span class="project-link">github.com/tig1795/diw_web_bl →</span>
+    </article>
+    <article class="project" data-tags="eb">
+      <div class="project-top"><span class="project-tag">E-Book</span></div>
+      <h3><a href="https://github.com/tig1795/hrry_pttr_ebook" target="_blank" rel="noopener">Harry Potter as an E-Book</a></h3>
+      <p>"Harry Potter and the Philosopher's Stone" processed from several text files into an EPUB — with different variants for representing intertextual references within an e-book as the central component.</p>
+      <span class="project-link">github.com/tig1795/hrry_pttr_ebook →</span>
+    </article>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1032 26" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M0 13h80l14-9 18 18 14-13 10 6 22-11 16 14 12-5h120l14 8 18-16 12 10 16-6 20 9 14-11h130l12-7 20 14 14-10 12 8 18-12 16 10h140l14 9 18-18 14 13 10-6 22 11 16-14 12 5h136"/>
+  </svg>
+</div>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="section-sub">// where I've worked</p>
+
+  <div class="entry">
+    <div class="entry-when">Feb 2024 — today<span>Würzburg</span></div>
+    <div>
+      <h3>Consultant SAP IBP</h3>
+      <p class="org"><a href="https://www.tivtal.com/" target="_blank" rel="noopener">TIVTAL GmbH</a> — Supply Chain Planning</p>
+      <ul>
+        <li>Implementing SAP IBP solutions for demand and supply planning at industrial clients — S&amp;OP processes, key figures, planning operators, planner workspaces.</li>
+        <li>Designing and building CI-DS (Cloud Integration for Data Services) integrations, including REST API interfaces (e.g. Salesforce) and complex data flows between IBP and SAP ECC.</li>
+        <li>Data analysis and quality assurance: test case design, configuration comparisons, go-live support.</li>
+        <li>Creating technical documentation, decision briefs and end-user training material.</li>
+        <li>Actively using LLM-based AI assistants in day-to-day project work — from debugging and configuration to documentation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-when">Dec 2018 — Jan 2024<span>Würzburg</span></div>
+    <div>
+      <h3>Student Worker</h3>
+      <p class="org"><a href="https://www.uni-wuerzburg.de/international/" target="_blank" rel="noopener">International Office, University of Würzburg</a></p>
+      <ul>
+        <li>Conducting data analysis and generating visualizations for informative insights.</li>
+        <li>Managing database operations, including editing and updating, using tools like Moveon and Microsoft Access.</li>
+        <li>Engaging in research to enhance knowledge and contribute to informed decision-making.</li>
+        <li>Maintaining and updating the service centre's websites with TYPO3.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-when">Oct — Nov 2018<span>Würzburg</span></div>
+    <div>
+      <h3>Food Delivery</h3>
+      <p class="org"><a href="https://www.burgerme.de/standorte/wuerzburg/" target="_blank" rel="noopener">burgerme</a></p>
+      <p class="note">Short and honest: delivering burgers. Every resumé needs one job that keeps you humble.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-when">Oct 2017 — Sep 2018<span>Würzburg</span></div>
+    <div>
+      <h3>Technical Advisor</h3>
+      <p class="org"><a href="https://www.deutsche-technikberatung.de/" target="_blank" rel="noopener">DTB Deutsche Technikberatung GmbH</a></p>
+      <ul>
+        <li>Personal customer support with holistic consulting and individual on-site training on relevant technology.</li>
+        <li>Independent analysis of existing technology portfolios, deriving optimisation potential and recommendations.</li>
+        <li>On-site technical support: installation, troubleshooting, setting up and updating software, testing active systems.</li>
+        <li>Preparation of documentation and final reports; quality management.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p class="section-sub">// what I studied</p>
+
+  <div class="entry">
+    <div class="entry-when">2020 — 2023<span>University of Würzburg</span></div>
+    <div>
+      <h3>M.A. Digital Humanities <span class="grade">final 1.6 · thesis 1.0</span></h3>
+      <p class="org"><a href="https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/studium/master/" target="_blank" rel="noopener">Julius-Maximilians-Universität Würzburg</a></p>
+      <p class="note">Thesis: a comparative analysis of data sets and feature importance in predicting hit songs — a machine learning approach using XGBoost and Transformer-based NLP feature extraction across 40,000+ songs.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-when">2015 — 2020<span>University of Würzburg</span></div>
+    <div>
+      <h3>B.A. Digital Humanities &amp; History</h3>
+      <p class="org"><a href="https://www.phil.uni-wuerzburg.de/studium/studienangebot/digital-humanities/" target="_blank" rel="noopener">Julius-Maximilians-Universität Würzburg</a></p>
+      <p class="note">Thesis: the elections in the Weimar Republic 1919–1933 — the influence of economic development on the voting behaviour of the population.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-when">2014 — 2015<span>University of Würzburg</span></div>
+    <div>
+      <h3>B.A. Economics</h3>
+      <p class="org"><a href="https://www.wiwi.uni-wuerzburg.de/startseite/" target="_blank" rel="noopener">Julius-Maximilians-Universität Würzburg</a></p>
+      <p class="note">Withdrew from the degree program after two semesters — sometimes the fastest way forward is a course correction.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-when">2006 — 2014<span>Hösbach</span></div>
+    <div>
+      <h3>Abitur</h3>
+      <p class="org"><a href="https://www.hanns-seidel-gymnasium.de/" target="_blank" rel="noopener">Hanns-Seidel-Gymnasium</a></p>
+      <p class="note">Actively participated in the mathematical-technological curriculum throughout — the STEM track, before it was called that.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <p class="section-sub">// verified credentials</p>
+  <div class="certs">
+    <div class="cert primary">
+      <span class="cert-org">SAP</span>
+      <h3>SAP Certified — SAP Integrated Business Planning</h3>
+      <p>Certification exam (C_IBP_2502) covering SAP supply chain planning with SAP IBP, verifying the ability to apply this knowledge practically in implementation projects.</p>
+      <span class="cert-meta">Issued May 2025 · valid until Apr 2027</span>
+      <a class="cert-link" href="https://www.credly.com/badges/fa24e713-3e4a-49ec-bb41-464bad9bf1d0" target="_blank" rel="noopener">verify on credly →</a>
+    </div>
+    <div class="cert">
+      <span class="cert-org">JMU Würzburg</span>
+      <h3>TYPO3 — Basics</h3>
+      <p>Primer on website editing utilizing TYPO3.</p>
+      <span class="cert-meta">Issued Mar 2021</span>
+      <a class="cert-link" href="https://www.dropbox.com/scl/fi/h8vhk8h1dru5wrpd5ym1y/Zertifikat_Typo_3.pdf?rlkey=x7nkgt7cu9ro7aor0866dyecr&dl=0" target="_blank" rel="noopener">view certificate →</a>
+    </div>
+    <div class="cert">
+      <span class="cert-org">JMU Würzburg</span>
+      <h3>Image Editing with Affinity Photo</h3>
+      <p>Foundations of image editing using Affinity Photo.</p>
+      <span class="cert-meta">Issued Mar 2019</span>
+      <a class="cert-link" href="https://www.dropbox.com/scl/fi/70pc8pg37zjfr37fl7i2y/Zertifikat_Affinity_Photo.pdf?rlkey=es2onc60si7wvsqydww40q4bw&dl=0" target="_blank" rel="noopener">view certificate →</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1032 26" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M0 13h80l14-9 18 18 14-13 10 6 22-11 16 14 12-5h120l14 8 18-16 12 10 16-6 20 9 14-11h130l12-7 20 14 14-10 12 8 18-12 16 10h140l14 9 18-18 14 13 10-6 22 11 16-14 12 5h136"/>
+  </svg>
+</div>
+
+<section id="contact" class="contact">
+  <h2>Let's talk.</h2>
+  <p>Whether it's supply chain planning, a machine learning idea, or just a good conversation about data — my inbox is open.</p>
+  <div class="hero-cta" style="justify-content:center">
+    <a class="btn btn-solid" href="mailto:timognth@icloud.com">timognth@icloud.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/timo-guenther" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/tig1795" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Timo Günther · guenthertimo.de · handcrafted, no template
+</footer>
+
+<script>
+// Projekt-Filter
+const filters = document.querySelectorAll('.filter');
+const projects = document.querySelectorAll('.project');
+filters.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filters.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    projects.forEach(p => {
+      p.classList.toggle('hidden', f !== 'all' && !p.dataset.tags.includes(f));
+    });
+  });
+});
+</script>
+</body>
+</html>
