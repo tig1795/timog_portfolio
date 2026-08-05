@@ -1,0 +1,4 @@
+# Neue statische Website — kein Build-Schritt mehr nötig (kein Hugo)
+[build]
+  publish = "site"
+  command = "echo 'static site — nothing to build'"
