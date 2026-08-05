@@ -22,13 +22,28 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Consultant SAP IBP
+    company: TIVTAL GmbH
+    company_url: https://www.tivtal.com/
+    location: Würzburg
+    date_start: '2024-02-01'
+    date_end: ''
+    description: |2-
+        Consulting and implementation for supply chain planning with SAP IBP (Integrated Business Planning):
+
+        * Implementing SAP IBP solutions for demand and supply planning at industrial clients (S&OP processes, key figures, planning operators, planner workspaces).
+        * Designing and building CI-DS (Cloud Integration for Data Services) integrations — including REST API interfaces (e.g. Salesforce) and complex data flows between IBP and SAP ECC.
+        * Data analysis and quality assurance: test case design, configuration comparisons, and go-live support.
+        * Creating technical documentation, decision briefs, and end-user training material.
+        * Actively using LLM-based AI assistants in day-to-day project work — from debugging and configuration to documentation.
+
   - title: Student Worker
     company: University of Würzburg
     company_url: https://www.uni-wuerzburg.de/international/
     company_logo: JMU
     location: Würzburg
     date_start: '2018-12-01'
-    date_end: ''
+    date_end: '2024-01-31'
     description: |2-
         Responsibilities include:
         
