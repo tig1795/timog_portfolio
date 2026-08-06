@@ -613,11 +613,26 @@ updateLangBtn();
 // Theme-Umschalter
 const themeToggle = document.getElementById('themeToggle');
 function updateThemeBtn(){ themeToggle.setAttribute('aria-pressed', root.dataset.theme === 'dark' ? 'true' : 'false'); }
+const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 themeToggle.addEventListener('click', () => {
   const next = root.dataset.theme === 'light' ? 'dark' : 'light';
   root.dataset.theme = next;
-  try{ localStorage.setItem('theme', next); }catch(e){}
+  try{
+    if ((next === 'dark') === systemDark.matches) {
+      localStorage.removeItem('theme');
+    } else {
+      localStorage.setItem('theme', next);
+    }
+  }catch(e){}
   updateThemeBtn();
+});
+systemDark.addEventListener('change', e => {
+  let manual = null;
+  try{ manual = localStorage.getItem('theme'); }catch(err){}
+  if (!manual) {
+    root.dataset.theme = e.matches ? 'dark' : 'light';
+    updateThemeBtn();
+  }
 });
 updateThemeBtn();
 
