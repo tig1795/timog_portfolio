@@ -147,9 +147,9 @@ h1 em{font-style:normal;color:var(--accent)}
 .btn svg{margin-right:7px}
 .socials a:hover{color:var(--accent);text-decoration:none}
 
-.portrait-wrap{height:100%;min-height:0}
+.portrait-wrap{position:relative;height:100%;min-height:0}
 .portrait{
-  width:100%;height:100%;object-fit:cover;
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   border-radius:12px;
   border:1px solid var(--line);
   display:block;
@@ -230,7 +230,7 @@ h2{
 }
 
 /* ---------- Certifications ---------- */
-.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.certs{display:grid;grid-template-columns:1fr;max-width:680px;gap:18px}
 .cert{
   border:1px solid var(--line);border-radius:10px;background:var(--surface);
   padding:26px;display:flex;flex-direction:column;gap:10px;
@@ -294,7 +294,7 @@ footer{
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;gap:36px;padding-top:48px}
   .portrait-wrap{order:-1;height:auto}
-  .portrait{height:auto;aspect-ratio:1/1;max-width:360px;margin:0 auto}
+  .portrait{position:static;height:auto;aspect-ratio:1/1;max-width:360px;margin:0 auto}
   .certs{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
   .entry{grid-template-columns:1fr;gap:8px}
@@ -572,21 +572,10 @@ footer{
       <h3>SAP Certified — SAP Integrated Business Planning</h3>
       <p><span class="lang-en">Certification exam (C_IBP_2502) covering supply chain planning with SAP IBP, verifying the ability to apply this knowledge practically in implementation projects.</span><span class="lang-de">Zertifizierungsprüfung (C_IBP_2502) zu Supply Chain Planning mit SAP IBP — Nachweis der praktischen Anwendung in Implementierungsprojekten.</span></p>
       <span class="cert-meta"><span class="lang-en">Issued May 2025 · valid until Apr 2027</span><span class="lang-de">Ausgestellt Mai 2025 · gültig bis Apr 2027</span></span>
-      <a class="cert-link" href="https://www.credly.com/badges/fa24e713-3e4a-49ec-bb41-464bad9bf1d0" target="_blank" rel="noopener"><span class="lang-en">verify on credly →</span><span class="lang-de">auf credly prüfen →</span></a>
-    </div>
-    <div class="cert">
-      <span class="cert-org">JMU Würzburg</span>
-      <h3>TYPO3 — Basics</h3>
-      <p><span class="lang-en">Primer on website editing utilizing TYPO3.</span><span class="lang-de">Grundlagen der Webseitenpflege mit TYPO3.</span></p>
-      <span class="cert-meta"><span class="lang-en">Issued Mar 2021</span><span class="lang-de">Ausgestellt März 2021</span></span>
-      <a class="cert-link" href="https://www.dropbox.com/scl/fi/h8vhk8h1dru5wrpd5ym1y/Zertifikat_Typo_3.pdf?rlkey=x7nkgt7cu9ro7aor0866dyecr&dl=0" target="_blank" rel="noopener"><span class="lang-en">view certificate →</span><span class="lang-de">Zertifikat ansehen →</span></a>
-    </div>
-    <div class="cert">
-      <span class="cert-org">JMU Würzburg</span>
-      <h3><span class="lang-en">Image Editing with Affinity Photo</span><span class="lang-de">Bildbearbeitung mit Affinity Photo</span></h3>
-      <p><span class="lang-en">Foundations of image editing using Affinity Photo.</span><span class="lang-de">Grundlagen der Bildbearbeitung mit Affinity Photo.</span></p>
-      <span class="cert-meta"><span class="lang-en">Issued Mar 2019</span><span class="lang-de">Ausgestellt März 2019</span></span>
-      <a class="cert-link" href="https://www.dropbox.com/scl/fi/70pc8pg37zjfr37fl7i2y/Zertifikat_Affinity_Photo.pdf?rlkey=es2onc60si7wvsqydww40q4bw&dl=0" target="_blank" rel="noopener"><span class="lang-en">view certificate →</span><span class="lang-de">Zertifikat ansehen →</span></a>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <a class="cert-link" href="files/sap_certification.pdf" target="_blank" rel="noopener"><span class="lang-en">view certificate (PDF) →</span><span class="lang-de">Zertifikat ansehen (PDF) →</span></a>
+        <a class="cert-link" href="https://www.credly.com/badges/fa24e713-3e4a-49ec-bb41-464bad9bf1d0" target="_blank" rel="noopener"><span class="lang-en">verify on credly →</span><span class="lang-de">auf credly prüfen →</span></a>
+      </div>
     </div>
   </div>
 </section>
