@@ -123,7 +123,7 @@ nav{
 .hero{
   max-width:var(--maxw);margin:0 auto;
   padding:80px 24px 48px;
-  display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:stretch;
 }
 .eyebrow{
   font-family:'Martian Mono',monospace;font-size:12px;color:var(--accent);
@@ -147,12 +147,12 @@ h1 em{font-style:normal;color:var(--accent)}
 .btn svg{margin-right:7px}
 .socials a:hover{color:var(--accent);text-decoration:none}
 
-.portrait-wrap{justify-self:center;text-align:center}
+.portrait-wrap{height:100%;min-height:0}
 .portrait{
-  width:min(300px,70vw);aspect-ratio:1/1;object-fit:cover;
+  width:100%;height:100%;object-fit:cover;
   border-radius:12px;
   border:1px solid var(--line);
-  display:block;margin:0 auto;
+  display:block;
   box-shadow:0 6px 24px var(--shadow);
 }
 
@@ -293,7 +293,8 @@ footer{
 /* ---------- Responsive ---------- */
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;gap:36px;padding-top:48px}
-  .portrait-wrap{order:-1}
+  .portrait-wrap{order:-1;height:auto}
+  .portrait{height:auto;aspect-ratio:1/1;max-width:360px;margin:0 auto}
   .certs{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
   .entry{grid-template-columns:1fr;gap:8px}
@@ -353,7 +354,7 @@ footer{
     </div>
   </div>
   <div class="portrait-wrap">
-    <img class="portrait" src="assets/timo.jpg" alt="Timo Günther" width="560" height="560">
+    <img class="portrait" src="assets/timo.jpg" alt="Timo Günther" width="720" height="900">
   </div>
 </header>
 
