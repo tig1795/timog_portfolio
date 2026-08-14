@@ -1,8 +1,8 @@
 # Redirects: alte Hugo/Wowchemy-URLs -> neue Single-Page
 # (301 = dauerhaft, damit Google die alten Einträge ersetzt)
 
-/about            /#experience   301
-/about/*          /#experience   301
+/about            /   301
+/about/*          /   301
 /project/*        /#work         301
 /projects/*       /#work         301
 /uploads/resume.pdf   /files/resume.pdf   301
