@@ -1,6 +1,6 @@
 # guenthertimo.de
 
-Personal portfolio website of **Timo Günther** — Data Scientist & SAP IBP Consultant.
+Personal portfolio website of **Timo Günther**: Digital Humanities, data & AI, IT projects.
 
 🔗 **Live:** [guenthertimo.de](https://guenthertimo.de)
 
