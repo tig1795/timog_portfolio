@@ -181,15 +181,15 @@ h1 em{font-style:normal;color:var(--accent)}
 .fi-fill{
   height:100%;border-radius:4px;
   background:var(--accent);opacity:.85;
-  transform-origin:left;transform:scaleX(0);
-  animation:grow .9s cubic-bezier(.2,.7,.2,1) forwards;
+  transform-origin:left;
+  animation:grow .9s cubic-bezier(.2,.7,.2,1) both;
 }
 .fi-row:nth-child(3) .fi-fill{animation-delay:.08s}
 .fi-row:nth-child(4) .fi-fill{animation-delay:.16s}
 .fi-row:nth-child(5) .fi-fill{animation-delay:.24s}
 .fi-row:nth-child(6) .fi-fill{animation-delay:.32s}
 .fi-row:nth-child(7) .fi-fill{animation-delay:.40s}
-@keyframes grow{to{transform:scaleX(1)}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .fi-val{font-family:'Martian Mono',monospace;font-size:11px;color:var(--muted);text-align:right}
 
 /* ---------- Sections ---------- */
